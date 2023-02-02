@@ -17,12 +17,14 @@ function openMenu(){
   document.querySelector("nav ul").classList.add("openNav");
   document.querySelector("img").classList.add("body-color");
   document.querySelector("h1").classList.add("body-color");
+  document.querySelector("h3").classList.add("body-color");
 }
 
 function closeMenu(){
   document.querySelector("nav ul").classList.remove("openNav");
   document.querySelector("img").classList.remove("body-color");
   document.querySelector("h1").classList.remove("body-color");
+  document.querySelector("h3").classList.remove("body-color");
 }
 
 
@@ -44,3 +46,19 @@ form.addEventListener('submit', e => {
 
     .catch(error => console.error('Error!', error.message))
 })
+
+
+
+
+
+// 
+// const bg = document.querySelector('.bSMfSr');
+// const windowWidth = window.innerWidth / 5;
+// const windowHeight = window.innerHeight / 5 ;
+//
+// bg.addEventListener('mousemove', (e) => {
+//   const mouseX = e.clientX / windowWidth;
+//   const mouseY = e.clientY / windowHeight;
+//
+//   bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+// });

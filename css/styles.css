@@ -15,7 +15,7 @@ body{
 }
 
 p{
-  font-size: 13px;
+  /* font-size: 18px; */
 }
 
 #header{
@@ -27,8 +27,12 @@ p{
   background-position: left;
 }
 
-.container{
-  padding: 10px 20%;
+/* .container{
+  margin: 10px 20%;
+} */
+
+.uniform-margin{
+  margin: 70px 20%;
 }
 
 nav{
@@ -39,20 +43,24 @@ nav{
 }
 
 .logo{
-  /* width: 140px; */
+  width: 180px;
 }
 
 .nav-item{
   display: inline-block;
   list-style: none;
   margin: 10px 0 10px 40px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .nav-item a{
   text-decoration: none;
   color: #000000;
   position: relative;
+}
+
+.nav-item a:hover{
+  color: #F15412;
 }
 
 .nav-item a::after{
@@ -75,10 +83,17 @@ nav{
   margin-top: 20%;
   font-size: 40px;
   line-height: 2;
+  position: relative;
+  z-index: 1;
 }
 
 .firstName{
   color: #F15412;
+}
+
+.headerText h3{
+  position: relative;
+  z-index: 1;
 }
 
 /* About section */
@@ -86,12 +101,12 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px 20%;
+  margin-top: 20px;
 }
 
 .aboutPix{
-  width: 35%;
-  background-color: gray;
+  width: 55%;
+  /* background-color: white; */
   border-radius: 15px;
 }
 
@@ -105,7 +120,11 @@ nav{
 }
 
 .aboutText{
-  width: 60%;
+  width: 40%;
+}
+
+.aboutText p{
+  width: 80%;
 }
 
 .sectionH2{
@@ -118,7 +137,7 @@ nav{
 }
 
 .tab-item{
-  margin: 20px 20px 40px 0;
+  margin: 0 20px 20px 0;
   cursor: pointer;
   position: relative;
 }
@@ -157,9 +176,9 @@ nav{
 }
 
 /* --------Services----- */
-.servicesDiv{
+/* .servicesDiv{
   margin: 50px 20%;
-}
+} */
 
 .service-items{
   display: grid;
@@ -207,9 +226,9 @@ nav{
 
 
 /* ------My Work------- */
-.portfolio{
+/* .portfolio{
   margin: 70px 20%;
-}
+} */
 
 /* .portfolioContainer{
   text-align: center;
@@ -312,10 +331,10 @@ nav{
 
 
 /* ----------Contact Me--------- */
-.contact-me{
+/* .contact-me{
   margin: 70px 20%;
 
-}
+} */
 
 .contact-me-divs{
   display: flex;
@@ -392,7 +411,18 @@ form .btn3{
 .icon{
   position: absolute;
   visibility: hidden;
-  /* display: none; */
+  font-size: 35px;
+}
+
+.icon1{
+  top: 80px;
+  right: 50px;
+}
+
+.icon2{
+  top: 30px;
+  right: 40px;
+
 }
 
 .openNav{
@@ -411,14 +441,67 @@ form .btn3{
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 921px) and (max-width: 1220px){
+  .logo{
+    width: 150px;
+  }
+
+  .nav-item{
+    margin: 10px 0 10px 50px;
+    font-size: 1.1rem;
+  }
+
+  .headerText h1{
+    font-size: 2rem;
+  }
+
+  .uniform-margin{
+    margin: 70px 10%;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 920px){
+
+  .logo{
+    width: 140px;
+  }
+
+  .nav-item{
+    margin: 10px 0 10px 10px;
+    font-size: 1rem;
+  }
+
+  .headerText h1{
+    font-size: 2rem;
+  }
+
+  .uniform-margin{
+    margin: 70px 10%;
+  }
+
+  .aboutText p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 619px){
+
+  .logo{
+    width: 120px;
+  }
+
+  .uniform-margin{
+    margin: 40px 5%;
+  }
 
   .icon{
     visibility: visible;
-    /* display: block; */
-    font-size: 25px;
-    top: 20px;
-    right: 20px;
+  }
+
+  .icon1{
+    top: 42px;
+    /* right: 50px; */
+    right: 5%;
   }
 
   nav ul{
@@ -429,7 +512,7 @@ form .btn3{
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 1;
+    z-index: 2;
     transition: 0.5s;
   }
 
@@ -440,15 +523,9 @@ form .btn3{
     margin: 20px;
   }
 
-  /* nav ul .icon{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  } */
-
-  /* .aboutDiv{
-    flex-direction: column;
-  } */
+  .aboutText p{
+    width: 100%;
+  }
 
   .aboutPix{
     width: 100%;
@@ -485,4 +562,366 @@ form .btn3{
     flex-basis: 100%;
   } */
 
+  .nav-item a:hover{
+    color:  #EEEEEE;
+  }
+
+  .nav-item a::after{
+    background: #EEEEEE;
+  }
+}
+
+
+
+
+
+
+
+
+.jUAUNp {
+    position: absolute;
+    width: 0.764231rem;
+    top: 77.6639vh;
+    overflow: hidden;
+    left: 1.91946vw;
+    animation: 9.20109s ease-in-out 0s infinite alternate none running pulse, 260.527s linear 0s 1 normal forwards running roll;
+}
+
+.imMAah {
+    position: absolute;
+    width: 3.076rem;
+    top: 16.5102vh;
+    overflow: hidden;
+    left: 79.3018vw;
+    animation: 10.5392s ease-in-out 0s infinite alternate none running pulse, 256.264s linear 0s 1 normal forwards running roll;
+}
+
+.cTtuvK {
+    position: absolute;
+    width: 2.57336rem;
+    top: 50.5806vh;
+    overflow: hidden;
+    left: 72.1032vw;
+    animation: 8.79669s ease-in-out 0s infinite alternate none running pulse, 191.635s linear 0s 1 normal forwards running roll;
+}
+
+.kXdVsS {
+    position: absolute;
+    width: 5.50451rem;
+    top: 22.1045vh;
+    overflow: hidden;
+    left: 32.1952vw;
+    animation: 9.74122s ease-in-out 0s infinite alternate none running pulse, 147.193s linear 0s 1 normal forwards running roll;
+}
+
+.dTFxSR {
+    position: absolute;
+    width: 1.77786rem;
+    top: 22.9554vh;
+    overflow: hidden;
+    left: 10.3908vw;
+    animation: 10.0983s ease-in-out 0s infinite alternate none running pulse, 139.784s linear 0s 1 normal forwards running roll;
+}
+
+.pLFyn {
+    position: absolute;
+    width: 2.37881rem;
+    top: 50.7073vh;
+    overflow: hidden;
+    left: -5.98786vw;
+    animation: 11.7562s ease-in-out 0s infinite alternate none running pulse, 177.123s linear 0s 1 normal forwards running roll;
+}
+
+.bZdCFc {
+    position: absolute;
+    width: 5.85403rem;
+    top: 64.1676vh;
+    overflow: hidden;
+    left: 47.1275vw;
+    animation: 10.779s ease-in-out 0s infinite alternate none running pulse, 157.333s linear 0s 1 normal forwards running roll;
+}
+
+.kEPCbJ {
+    position: absolute;
+    width: 2.34076rem;
+    top: 69.0841vh;
+    overflow: hidden;
+    left: 6.49499vw;
+    animation: 11.1124s ease-in-out 0s infinite alternate none running pulse, 178.57s linear 0s 1 normal forwards running roll;
+}
+
+.bSMfSr {
+    position: absolute;
+    width: 5.31795rem;
+    top: 18.6907vh;
+    overflow: hidden;
+    left: 71.1619vw;
+    animation: 10.289s ease-in-out 0s infinite alternate none running pulse, 187.31s linear 0s 1 normal forwards running roll;
+}
+
+.cnsmYx {
+    position: absolute;
+    width: 1.30067rem;
+    top: 40.6672vh;
+    overflow: hidden;
+    left: -1.16553vw;
+    animation: 9.22283s ease-in-out 0s infinite alternate none running pulse, 278.091s linear 0s 1 normal forwards running roll;
+}
+
+.gXBXa {
+    position: absolute;
+    width: 2.49699rem;
+    top: 78.4746vh;
+    overflow: hidden;
+    left: 9.33923vw;
+    animation: 9.64781s ease-in-out 0s infinite alternate none running pulse, 218.034s linear 0s 1 normal forwards running roll;
+}
+
+.erxat {
+    position: absolute;
+    width: 4.61142rem;
+    top: 46.8367vh;
+    overflow: hidden;
+    left: 57.1518vw;
+    animation: 8.78106s ease-in-out 0s infinite alternate none running pulse, 221.145s linear 0s 1 normal forwards running roll;
+}
+
+.hxYRMQ {
+    position: absolute;
+    width: 6.61371rem;
+    top: 81.7824vh;
+    overflow: hidden;
+    left: 84.3247vw;
+    animation: 7.0044s ease-in-out 0s infinite alternate none running pulse, 288.4s linear 0s 1 normal forwards running roll;
+}
+
+.fahvUL {
+    position: absolute;
+    width: 4.46252rem;
+    top: 58.5356vh;
+    overflow: hidden;
+    left: 18.2115vw;
+    animation: 7.95417s ease-in-out 0s infinite alternate none running pulse, 120.441s linear 0s 1 normal forwards running roll;
+}
+
+.VTzpQ {
+    position: absolute;
+    width: 0.524639rem;
+    top: 56.6096vh;
+    overflow: hidden;
+    left: 68.1017vw;
+    animation: 10.8913s ease-in-out 0s infinite alternate none running pulse, 191.365s linear 0s 1 normal forwards running roll;
+}
+
+.bWfRtJ {
+    position: absolute;
+    width: 6.71492rem;
+    top: 48.2223vh;
+    overflow: hidden;
+    left: 46.856vw;
+    animation: 7.25459s ease-in-out 0s infinite alternate none running pulse, 137.863s linear 0s 1 normal forwards running roll;
+}
+
+.eVTfzM {
+    position: absolute;
+    width: 1.0745rem;
+    top: 48.7503vh;
+    overflow: hidden;
+    left: 41.8579vw;
+    animation: 10.2895s ease-in-out 0s infinite alternate none running pulse, 236.725s linear 0s 1 normal forwards running roll;
+}
+
+/* .faGOpK {
+    position: absolute;
+    width: 4.43424rem;
+    top: 47.1348vh;
+    overflow: hidden;
+    left: 46.0487vw;
+    animation: 11.5441s ease-in-out 0s infinite alternate none running pulse, 146.864s linear 0s 1 normal forwards running roll;
+} */
+
+.kKEfOR {
+    position: absolute;
+    width: 5.61578rem;
+    top: 69.3422vh;
+    overflow: hidden;
+    left: 12.5572vw;
+    animation: 11.5072s ease-in-out 0s infinite alternate none running pulse, 156.265s linear 0s 1 normal forwards running roll;
+}
+
+.grjnEx {
+    position: absolute;
+    width: 2.71953rem;
+    top: 24.7918vh;
+    overflow: hidden;
+    left: 56.2249vw;
+    animation: 11.176s ease-in-out 0s infinite alternate none running pulse, 122.034s linear 0s 1 normal forwards running roll;
+}
+
+.bAkEjI {
+    position: absolute;
+    width: 6.88306rem;
+    top: 15.4116vh;
+    overflow: hidden;
+    left: 26.6412vw;
+    animation: 7.01144s ease-in-out 0s infinite alternate none running pulse, 139.199s linear 0s 1 normal forwards running roll;
+}
+
+.iynjeb {
+    position: absolute;
+    width: 3.21276rem;
+    top: 60.672vh;
+    overflow: hidden;
+    left: 0.949336vw;
+    animation: 10.3121s ease-in-out 0s infinite alternate none running pulse, 227.226s linear 0s 1 normal forwards running roll;
+}
+
+.jEfLyt {
+    position: absolute;
+    width: 3.5822rem;
+    top: 63.0724vh;
+    overflow: hidden;
+    left: 31.0568vw;
+    animation: 8.72581s ease-in-out 0s infinite alternate none running pulse, 228.698s linear 0s 1 normal forwards running roll;
+}
+
+.cyhmjh {
+    position: absolute;
+    width: 1.91404rem;
+    top: 25.9898vh;
+    overflow: hidden;
+    left: 82.0683vw;
+    animation: 7.40964s ease-in-out 0s infinite alternate none running pulse, 177.899s linear 0s 1 normal forwards running roll;
+}
+
+.kQAThA {
+    position: absolute;
+    width: 1.31916rem;
+    top: 47.9123vh;
+    overflow: hidden;
+    left: 56.6676vw;
+    animation: 8.62888s ease-in-out 0s infinite alternate none running pulse, 220.299s linear 0s 1 normal forwards running roll;
+}
+
+.drriUG {
+    position: absolute;
+    width: 0.524895rem;
+    top: 44.6217vh;
+    overflow: hidden;
+    left: 25.7906vw;
+    animation: 9.04368s ease-in-out 0s infinite alternate none running pulse, 186.4s linear 0s 1 normal forwards running roll;
+}
+
+.bIGboh {
+    position: absolute;
+    width: 2.23151rem;
+    top: 19.4705vh;
+    overflow: hidden;
+    left: -1.01118vw;
+    animation: 8.39471s ease-in-out 0s infinite alternate none running pulse, 202.839s linear 0s 1 normal forwards running roll;
+}
+
+.eGKdHC {
+    position: absolute;
+    width: 0.806092rem;
+    top: 44.5745vh;
+    overflow: hidden;
+    left: 19.6777vw;
+    animation: 7.05431s ease-in-out 0s infinite alternate none running pulse, 181.612s linear 0s 1 normal forwards running roll;
+}
+
+.jHUwyM {
+    position: absolute;
+    width: 2.59633rem;
+    top: 89.4941vh;
+    overflow: hidden;
+    left: 4.11834vw;
+    animation: 10.3923s ease-in-out 0s infinite alternate none running pulse, 264.852s linear 0s 1 normal forwards running roll;
+}
+
+.gyctmH {
+    position: absolute;
+    width: 2.01052rem;
+    top: 32.1612vh;
+    overflow: hidden;
+    left: 10.4359vw;
+    animation: 11.2891s ease-in-out 0s infinite alternate none running pulse, 123.659s linear 0s 1 normal forwards running roll;
+}
+
+
+/* ----------Projects Page---------- */
+.projects-margin{
+  margin: 40px 10%;
+}
+
+.portfolioDiv{
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 30% 45% 20%;
+}
+
+.portfolioDiv h3{
+  margin: 20px 0;
+}
+
+.portfolioDiv li{
+  /* list-style: none; */
+  /* margin-left: 20px; */
+}
+
+.frontendmentor{
+  margin: 30px auto 0 auto;
+  font-weight: bold;
+  font-size: 13px;
+  width: 43%;
+}
+
+
+.portImg{
+  width: 100%;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.portImg:hover{
+  transform: scale(1.1);
+}
+
+.indent-list{
+  margin-left: 20px;
+}
+
+.indent-list2{
+  margin-left: 20px;
+  list-style: none;
+}
+
+.overview h4{
+  margin: 20px auto 10px auto;
+}
+
+.font-icon{
+  width: 20px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.font-icon:hover{
+  transform: scale(1.5);
+  color: #F15412;
+}
+
+/* svg:hover{
+  color: #F15412;
+} */
+
+.links-p{
+  margin-top: 5px;
+}
+
+.links-p a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
 }
