@@ -18,6 +18,7 @@ function openMenu(){
   document.querySelector("img").classList.add("body-color");
   document.querySelector("h1").classList.add("body-color");
   document.querySelector("h3").classList.add("body-color");
+  document.querySelector(".portfolioDiv").classList.add("body-color");
 }
 
 function closeMenu(){
@@ -25,6 +26,7 @@ function closeMenu(){
   document.querySelector("img").classList.remove("body-color");
   document.querySelector("h1").classList.remove("body-color");
   document.querySelector("h3").classList.remove("body-color");
+  document.querySelector(".portfolioDiv").classList.remove("body-color");
 }
 
 
@@ -51,7 +53,7 @@ form.addEventListener('submit', e => {
 
 
 
-// 
+//
 // const bg = document.querySelector('.bSMfSr');
 // const windowWidth = window.innerWidth / 5;
 // const windowHeight = window.innerHeight / 5 ;

@@ -14,8 +14,34 @@ body{
   color: #000000;
 }
 
-p{
-  /* font-size: 18px; */
+form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #EEEEEE;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+form .btn3{
+  margin-top: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+hr{
+  margin: 70px auto 0 auto;
+  border-style: none none dotted none;
+  border-width: 15px;
+  width: 10%;
+  border-color: #F15412;
 }
 
 #header{
@@ -108,6 +134,10 @@ nav{
   width: 55%;
   /* background-color: white; */
   border-radius: 15px;
+}
+
+.aboutPix p{
+  text-align: justify;
 }
 
 .aboutPix img{
@@ -264,7 +294,8 @@ nav{
   left: 0;
   bottom: 0;
   overflow: hidden;
-  background: linear-gradient(rgba(0,0,0,0.6), #990000);
+  /* background: linear-gradient(rgba(0,0,0,0.6), #990000); */
+  background: linear-gradient(rgba(0,0,0,0.6), #F15412);
   position: absolute;
   border-radius: 15px;
   display: flex;
@@ -274,7 +305,7 @@ nav{
   padding: 0 40px;
   text-align: center;
   transition: height 0.5s;
-
+  color: white;
 }
 
 .work:hover .work-text{
@@ -282,8 +313,8 @@ nav{
 }
 
 .work-text h3{
-  font-weight: 500;
-  margin-bottom: 20px;
+  margin: 50px auto 20px auto;
+  font-weight: bolder;
 }
 
 .work-text a{
@@ -291,7 +322,6 @@ nav{
   font-size:20px;
   width: 55px;
   height: 55px;
-
   margin-top: 20px;
   /* color: #EEEEEE; */
   color: #990000;
@@ -299,11 +329,12 @@ nav{
   background: #EEEEEE;
   border-radius: 100%;
   line-height: 50px;
+  transition: 0.5s;
 }
 
 .work-text a:hover{
-  color: #FFDE00;
-  background:#990000;
+  color: #EEEEEE;
+  background:#000000;
 }
 
 .btn{
@@ -375,28 +406,6 @@ nav{
   margin-left: 0;
 }
 
-form{
-  width: 100%;
-}
-
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #262626;
-  padding: 15px;
-  margin: 15px 0;
-  color: #EEEEEE;
-  font-size: 18px;
-  border-radius: 7px;
-}
-
-form .btn3{
-  margin-top: 10px;
-  padding: 10px 50px;
-  cursor: pointer;
-}
-
 .copywright{
   width: 100%;
   text-align: center;
@@ -406,6 +415,92 @@ form .btn3{
   background: #272727;
   color: #EEEEEE;
 }
+
+/* ----------Projects Page---------- */
+.projects-margin{
+  margin: 40px 10%;
+}
+
+.portfolioDiv{
+  margin-top: 50px;
+  display: grid;
+  /* grid-gap: 40px; */
+  grid-template-columns: 30% 45% 20%;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* gap: 1rem; */
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+.portfolioDiv h3{
+  margin: 20px 0;
+}
+
+.portfolioDiv li{
+  /* list-style: none; */
+  /* margin-left: 20px; */
+}
+
+.overview p{
+  text-align: justify;
+}
+
+.frontendmentor{
+  margin: 30px auto 0 auto;
+  font-weight: bold;
+  font-size: 10px;
+  width: 43%;
+}
+
+
+.portImg{
+  width: 100%;
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.portImg:hover{
+  transform: scale(1.03);
+}
+
+.indent-list{
+  margin-left: 20px;
+}
+
+.indent-list2{
+  margin-left: 20px;
+  list-style: none;
+}
+
+.overview h4{
+  margin: 20px auto 10px auto;
+}
+
+.font-icon{
+  width: 20px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.font-icon:hover{
+  transform: scale(1.5);
+  color: #F15412;
+}
+
+/* svg:hover{
+  color: #F15412;
+} */
+
+.links-p{
+  margin-top: 5px;
+}
+
+.links-p a{
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
 
 /* -------------Mobile screen view----------- */
 .icon{
@@ -422,7 +517,6 @@ form .btn3{
 .icon2{
   top: 30px;
   right: 40px;
-
 }
 
 .openNav{
@@ -438,50 +532,6 @@ form .btn3{
   text-transform: capitalize;
   /* margin-top: -100px; */
   visibility: hidden;
-
-}
-
-@media screen and (min-width: 921px) and (max-width: 1220px){
-  .logo{
-    width: 150px;
-  }
-
-  .nav-item{
-    margin: 10px 0 10px 50px;
-    font-size: 1.1rem;
-  }
-
-  .headerText h1{
-    font-size: 2rem;
-  }
-
-  .uniform-margin{
-    margin: 70px 10%;
-  }
-}
-
-@media screen and (min-width: 620px) and (max-width: 920px){
-
-  .logo{
-    width: 140px;
-  }
-
-  .nav-item{
-    margin: 10px 0 10px 10px;
-    font-size: 1rem;
-  }
-
-  .headerText h1{
-    font-size: 2rem;
-  }
-
-  .uniform-margin{
-    margin: 70px 10%;
-  }
-
-  .aboutText p{
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 619px){
@@ -515,8 +565,6 @@ form .btn3{
     z-index: 2;
     transition: 0.5s;
   }
-
-
 
   .nav-item{
     display: block;
@@ -554,6 +602,10 @@ form .btn3{
     margin-top: 30px;
   }
 
+  hr{
+    width: 30%;
+  }
+
   /* .contact-left-div{
     flex-basis: 100%;
   }
@@ -569,7 +621,99 @@ form .btn3{
   .nav-item a::after{
     background: #EEEEEE;
   }
+
+  .projects-margin{
+    margin: 40px 14%;
+  }
+
+  .portfolioDiv{
+    grid-template-columns: 100%;
+  }
+
+  .frontendmentor{
+    width: 60%;
+  }
 }
+
+
+@media screen and (min-width: 620px) and (max-width: 920px){
+
+  .logo{
+    width: 140px;
+  }
+
+  .nav-item{
+    margin: 10px 0 10px 10px;
+    font-size: 1rem;
+  }
+
+  .headerText h1{
+    font-size: 2rem;
+  }
+
+  .uniform-margin{
+    margin: 70px 10%;
+  }
+
+  .aboutText p{
+    width: 100%;
+  }
+
+  .projects-margin{
+    margin: 40px 13%;
+  }
+
+  .portfolioDiv{
+    grid-template-columns: 100%;
+  }
+
+  hr{
+    width: 20%;
+  }
+
+  .mobile img{
+    display: block;
+    width: 60%;
+    margin:auto;
+  }
+
+}
+
+
+@media screen and (min-width: 921px) and (max-width: 1220px){
+  .logo{
+    width: 150px;
+  }
+
+  .nav-item{
+    margin: 10px 0 10px 50px;
+    font-size: 1.1rem;
+  }
+
+  .headerText h1{
+    font-size: 2rem;
+  }
+
+  .uniform-margin{
+    margin: 70px 10%;
+  }
+
+  .projects-margin{
+    margin: 40px 15%;
+  }
+
+  .portfolioDiv{
+    grid-template-columns: 100%;
+  }
+
+  .mobile img{
+    display: block;
+    width: 50%;
+    margin:auto;
+  }
+}
+
+
 
 
 
@@ -846,82 +990,4 @@ form .btn3{
     overflow: hidden;
     left: 10.4359vw;
     animation: 11.2891s ease-in-out 0s infinite alternate none running pulse, 123.659s linear 0s 1 normal forwards running roll;
-}
-
-
-/* ----------Projects Page---------- */
-.projects-margin{
-  margin: 40px 10%;
-}
-
-.portfolioDiv{
-  margin-top: 50px;
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: 30% 45% 20%;
-}
-
-.portfolioDiv h3{
-  margin: 20px 0;
-}
-
-.portfolioDiv li{
-  /* list-style: none; */
-  /* margin-left: 20px; */
-}
-
-.frontendmentor{
-  margin: 30px auto 0 auto;
-  font-weight: bold;
-  font-size: 13px;
-  width: 43%;
-}
-
-
-.portImg{
-  width: 100%;
-  transition: transform 0.5s;
-  overflow: hidden;
-}
-
-.portImg:hover{
-  transform: scale(1.1);
-}
-
-.indent-list{
-  margin-left: 20px;
-}
-
-.indent-list2{
-  margin-left: 20px;
-  list-style: none;
-}
-
-.overview h4{
-  margin: 20px auto 10px auto;
-}
-
-.font-icon{
-  width: 20px;
-  margin-right: 5px;
-  transition: 0.5s;
-}
-
-.font-icon:hover{
-  transform: scale(1.5);
-  color: #F15412;
-}
-
-/* svg:hover{
-  color: #F15412;
-} */
-
-.links-p{
-  margin-top: 5px;
-}
-
-.links-p a{
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
 }
