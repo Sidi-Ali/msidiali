@@ -410,11 +410,12 @@ nav{
 .copywright{
   width: 100%;
   text-align: center;
+  font-size: 12px;
   padding: 25px 0;
   font-weight: 200;
   margin-top: 20px;
   background: #272727;
-  color: #EEEEEE;
+  color: #808080;
 }
 
 /* ----------Projects Page---------- */
